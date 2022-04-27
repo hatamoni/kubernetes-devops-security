@@ -59,7 +59,7 @@ pipeline {
               // This step should not normally be used in your script. Consult the inline help for details.
               withDockerRegistry([credentialsId: 'hatamoniDockerhub', url: ""]) {
                 sh 'printenv'
-                sh 'docker build -t hatamoni/numeric-app:""$GIT_COMMIT"" .'
+                sh 'sudo docker build -t hatamoni/numeric-app:""$GIT_COMMIT"" .'
                 sh 'docker push hatamoni/numeric-app:""$GIT_COMMIT""'
               }
             }
