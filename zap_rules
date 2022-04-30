@@ -8,4 +8,4 @@
 
 # You can add your own messages to each rule by appending them after a tab on each line.
 
-100001  IGNORE  (http://devsecops-hix-demo.westeurope.cloudapp.azure.com:30293/compare/10)
+100001 IGNORE (http://devsecops-hix-demo.westeurope.cloudapp.azure.com:30393/compare/10)
